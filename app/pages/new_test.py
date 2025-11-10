@@ -5,7 +5,7 @@ from datetime import datetime
 from app.core.data_manager import DataManager
 from app.core.file_manager import FileManager
 from config.constants import DEPARTMENTS, TEST_PROGRESS
-import utils
+from app import utils
 
 # 初始化数据
 DataManager.init_database()
@@ -141,3 +141,4 @@ with st.form("new_test"):
 
                     utils.show_success_message("数据保存成功！")
                     st.rerun()
+
